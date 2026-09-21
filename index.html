@@ -30,84 +30,99 @@
     <div class="brand">tr<span>!</span>p<span>Z</span>y</div>
     <p class="tagline">We track. We know. We simplify.</p>
     <h1>Privacy Policy</h1>
-    <p class="muted">Effective date: 8 September 2026</p>
+    <p class="muted">Effective date: 22 September 2026</p>
 
-    <div class="card"><p>Tripzy is a vehicle expense, fuel, mileage, trip and reporting app. This Privacy Policy explains what information Tripzy processes, how it is used, when third-party services may process information, and the choices available to you.</p></div>
+    <div class="card"><p>Tripzy is a local-first vehicle, fuel, expense, trip and reporting app. This policy explains the personal data Tripzy processes, why it is processed, where it is stored, when service providers may process it, and the choices and rights available to you.</p></div>
 
-    <h2>1. Information you enter into Tripzy</h2>
-    <p>Tripzy allows you to enter information such as vehicle details, odometer readings, fuel entries, expenses, trip plans, passenger counts, budgets, notes and related records.</p>
-    <p>Tripzy is designed as a local-first application. Tripzy does not require you to create a Tripzy account, and the vehicle, fuel, expense and trip records you enter are stored locally on your device rather than being uploaded to Tripzy-operated servers.</p>
+    <h2>1. Local-first use and optional Tripzy Cloud</h2>
+    <p>You can use Tripzy's core local features without creating a Tripzy Cloud account. Vehicle, fuel, expense, trip and related records are stored in Tripzy's private app storage on your device.</p>
+    <p>If you choose to sign in to Tripzy Cloud, Tripzy uses Supabase for authentication, database and server-side account-deletion services. A cloud account may process your email address, authentication provider information, Supabase user identifier, and confirmed Tripzy records that are eligible for cloud sync.</p>
+    <p>Cloud-synced core records currently include vehicle records, fuel entries, expenses, trips, trip stops and trip members, together with technical identifiers and timestamps needed to keep those records associated with your account and synchronized.</p>
+    <p>Existing guest/local data is not automatically attached to a cloud account merely because you sign in. Tripzy's ownership controls determine which records belong to the signed-in account.</p>
 
-    <h2>2. Local storage and automatic Android backup</h2>
-    <p>Your Tripzy records are primarily stored in the app's local database and internal app storage on your device.</p>
-    <p>Tripzy disables Android's automatic cloud backup and device-to-device transfer for its internal database, internal files and app preferences.</p>
-    <p>You can remove locally stored Tripzy data by deleting records where the app provides that option, clearing the app's storage, or uninstalling the app.</p>
+    <h2>2. Information you provide</h2>
+    <ul>
+        <li>vehicle details, registration number, odometer readings and vehicle configuration;</li>
+        <li>fuel quantity, price, amount, dates, station and notes;</li>
+        <li>expense title, category, amount, date, merchant, optional odometer and notes;</li>
+        <li>trip names, route text, dates, passenger counts, budgets, odometers, stops, trip-member names/types and notes;</li>
+        <li>account email and authentication-related identifiers when Tripzy Cloud is used; and</li>
+        <li>support information you voluntarily send to Tripzy.</li>
+    </ul>
 
-    <h2>3. Manual backup, restore and data export</h2>
-    <p>Tripzy includes user-initiated backup, restore and data export features. These features use JSON files created only when you request them through Android's file picker.</p>
-    <p>A Tripzy backup can include your vehicle, trip, fuel and expense records and selected app preferences.</p>
-    <p>Smart Transaction pending candidates and Tripzy's temporary notification inbox/delivery bookkeeping are not included in the normal Tripzy backup/export dataset.</p>
-    <p>Backup or export files are saved only to the location you choose. After saving a file, you are responsible for how it is stored, copied, shared, backed up or deleted by the selected storage provider.</p>
+    <h2>3. Smart Transactions and Notification Access</h2>
+    <p>Smart Transactions is optional. Android Notification Access can make notification content from apps on your device available to Tripzy while access is enabled.</p>
+    <p>Tripzy filters likely payment notifications on-device and may extract amount, merchant/payee, source app, reference information, detected time and suggested category so you can review a possible Tripzy entry.</p>
+    <p>Detected Smart Transaction candidates are stored locally as pending reviews. Raw notification text is not uploaded to Tripzy Cloud, and Smart Transaction payment details are not sent to advertisers.</p>
+    <p>A pending review becomes a normal Fuel, Expense or Trip-linked record only after you confirm it. Once confirmed, that normal record may sync if you are signed in and it is owned by your Tripzy Cloud account.</p>
+    <p>You can disable Smart Transactions in Tripzy and revoke Notification Access through Android settings at any time.</p>
 
-    <h2>4. Smart Transactions and Notification Access</h2>
-    <p>Smart Transactions is an optional feature. If you enable it, Android requires you to grant Tripzy Notification Access in system settings.</p>
-    <p>Notification Access is a powerful Android permission that can make notification content from apps on your device available to Tripzy while the permission is enabled. Tripzy uses this access on-device to look for likely outgoing payment notifications and suggest possible fuel, vehicle-expense or trip-expense records for your review.</p>
-    <p>Tripzy filters and parses supported payment-related notification sources locally on your device. Payment candidates that Tripzy identifies may include information such as the payment amount, merchant or payee name, source app, reference information, detected time, suggested category and related matching data needed to avoid duplicate suggestions.</p>
-    <p>Smart Transaction candidates are stored locally in Tripzy until you review or ignore them, or until the app removes older unreviewed candidates as part of its local cleanup process. Tripzy does not upload your Smart Transaction notification content to Tripzy-operated servers.</p>
-    <p>You can disable Smart Transactions in Tripzy and revoke Notification Access at any time through Android system settings.</p>
+    <h2>4. Notifications and reminders</h2>
+    <p>Tripzy may request Android notification permission for trip reminders and Smart Transaction review alerts. Trip reminders are scheduled on your device when you enable them.</p>
 
-    <h2>5. Notifications and trip reminders</h2>
-    <p>Tripzy may request Android notification permission so it can show app notifications, Smart Transaction review prompts and trip reminders that you enable.</p>
-    <p>Trip reminders are created on your device using Android system scheduling. Tripzy also listens for device reboot, app update and time/time-zone changes so opted-in reminders can be rebuilt when needed.</p>
+    <h2>5. Automatic backup, manual backup and export</h2>
+    <p>Tripzy disables Android automatic cloud backup and device-to-device transfer for its internal database, internal files and app preferences.</p>
+    <p>User-requested backup, restore and export files are created only when you request them and are saved through Android's file picker to a location you choose. You are responsible for copies stored outside Tripzy.</p>
+    <p>Smart Transaction pending candidates and temporary notification inbox/delivery bookkeeping are not included in the normal Tripzy backup/export dataset.</p>
 
-    <h2>6. Advertising</h2>
-    <p>Tripzy uses Google AdMob / the Google Mobile Ads SDK to display advertising, including banner ads and optional rewarded ads.</p>
-    <p>According to Google's disclosures, the Google Mobile Ads SDK may automatically collect and share information such as:</p>
-    <ul><li>IP address, which may be used to estimate general location;</li><li>app and ad interaction information, such as app launches, taps and video views;</li><li>diagnostic and performance information; and</li><li>device or account identifiers, including the Android advertising ID where available.</li></ul>
-    <p>Google may use this information for advertising, analytics and fraud-prevention purposes. Information processed by Google is governed by Google's own policies.</p>
-    <p>Learn more: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a> and <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">How Google uses information for advertising</a>.</p>
+    <h2>6. Purposes of processing</h2>
+    <p>Tripzy processes personal data for features you choose to use, including local vehicle management, cloud authentication and synchronization, restoring owned cloud records, reminders, user-requested backup/export, duplicate prevention for Smart Transactions, support/privacy requests, service security and legal compliance.</p>
 
-    <h2>7. Rewarded ads and temporary ad-free access</h2>
-    <p>Tripzy may offer an optional rewarded advertisement. If you voluntarily complete the rewarded ad, Tripzy can grant a temporary ad-free period during which banner ads are hidden.</p>
-    <p>The expiry time for the temporary ad-free period is stored locally on your device so that the remaining time can continue after the app is restarted.</p>
+    <h2>7. Advertising and advertising privacy choices</h2>
+    <p>Tripzy uses Google AdMob / Google Mobile Ads SDK and may use Unity Ads through Google AdMob mediation. Advertising providers may process identifiers, IP address/general location, device/app information, ad interactions, diagnostics and fraud-prevention information under their own policies and applicable consent choices.</p>
+    <p>Where required, Tripzy uses Google's User Messaging Platform (UMP) to collect/manage advertising privacy choices before ads are requested. Tripzy does not send Smart Transaction payment details to advertising providers.</p>
 
-    <h2>8. Consent and privacy choices</h2>
-    <p>Where required by law, including for eligible users in the European Economic Area (EEA), the United Kingdom and Switzerland, Tripzy may use Google's User Messaging Platform (UMP) to present privacy and advertising consent choices.</p>
-    <p>Depending on your region and your selections, ads may be personalized, non-personalized or otherwise limited.</p>
+    <h2>8. Service providers</h2>
+    <ul>
+        <li><strong>Supabase</strong> for optional Tripzy Cloud authentication, database and account-deletion backend services;</li>
+        <li><strong>Google</strong> for Google sign-in where selected, AdMob, UMP, Play in-app review and Play in-app updates;</li>
+        <li><strong>Unity Ads</strong> as an advertising mediation partner where an eligible mediated ad is served; and</li>
+        <li><strong>Android system services</strong> for Notification Access, notifications, file selection/sharing and local scheduling.</li>
+    </ul>
+    <p>Tripzy's current Supabase project is deployed in the ap-south-1 region in India. Other providers or their subprocessors may process relevant data in other locations under their own legal and contractual safeguards.</p>
 
-    <h2>9. Third-party services</h2>
-    <p>Tripzy currently uses services or system components including:</p>
-    <ul><li>Google AdMob / Google Mobile Ads SDK;</li><li>Google User Messaging Platform (UMP), where applicable;</li><li>Android Notification Access and notification services, when you enable related features;</li><li>Android system file picker/storage services for user-requested backup and export files; and</li><li>Android system scheduling services for local reminders.</li></ul>
-    <p>Third-party providers may process information under their own privacy policies and legal obligations.</p>
+    <h2>9. Sharing and sale</h2>
+    <p>Tripzy does not sell your Tripzy core records or Smart Transaction payment details. Data is shared with service providers only as needed for the features described above or when required by applicable law or a binding government/court/cyber-security requirement.</p>
 
-    <h2>10. Data sharing and sale</h2>
-    <p>Tripzy does not sell the vehicle, fuel, expense, trip, Smart Transaction candidate or backup/export data that you enter or generate in the app.</p>
-    <p>Tripzy does not operate a server that receives your locally stored vehicle, fuel, expense, trip or Smart Transaction notification content.</p>
-    <p>Advertising-related information may be processed or shared by Google and its advertising partners as described in Google's policies and according to the consent choices available to you.</p>
+    <h2>10. Retention</h2>
+    <p>Local Tripzy records remain on your device until you delete them, clear app storage, restore different data, or uninstall the app.</p>
+    <p>Cloud account data and cloud-synced records are retained while needed to provide Tripzy Cloud and until you delete applicable records or delete your Tripzy account, subject to limited retention required for security, fraud prevention, backup recovery, dispute handling or applicable law.</p>
+    <p>Security, access and incident-related records may be retained for periods required by applicable Indian cyber-security or data-protection law.</p>
 
-    <h2>11. Data retention</h2>
-    <p>Locally entered Tripzy data remains on your device until you delete it, clear the app's storage, uninstall the app, restore a different backup, or it is otherwise removed through app/device storage controls.</p>
-    <p>Unreviewed Smart Transaction candidates may also be removed automatically by Tripzy's local cleanup process.</p>
-    <p>Files that you manually export or back up remain wherever you chose to save them until you delete them or the storage provider removes them.</p>
-    <p>Third-party providers may retain advertising or diagnostic information according to their own retention policies.</p>
+    <h2>11. Your choices and privacy rights</h2>
+    <p>You can keep Tripzy local-only, choose whether to create a cloud account, disable Smart Transactions, revoke Notification Access, manage Android notification permission, change applicable advertising privacy choices, edit/delete supported records, sign out, export/backup data, and delete your Tripzy Cloud account from the app.</p>
+    <p>Where applicable law provides additional rights, you may request access, correction/updating, erasure, consent withdrawal and grievance redressal by contacting Tripzy. Reasonable verification may be requested to protect the account.</p>
+    <p>See <a href="./delete-account.html">Delete your Tripzy account</a> for the external deletion process.</p>
 
-    <h2>12. Security</h2>
-    <p>Tripzy is designed to keep your core vehicle, expense, trip and Smart Transaction data local to your device. Internal automatic Android backup is disabled, and generated report sharing is restricted to temporary app-controlled files shared through Android's protected content-sharing mechanism.</p>
-    <p>However, no method of electronic storage or transmission can be guaranteed to be completely secure. You should protect access to your device and to any backup, export or report files that you choose to save or share.</p>
+    <h2>12. Account deletion</h2>
+    <p>Signed-in users can request account deletion inside Tripzy. The server verifies the authenticated account before deleting it. Owned cloud records are linked to the account through database relationships designed to remove those records when the auth account is deleted.</p>
+    <p>After server deletion succeeds inside the app, Tripzy clears its local databases and relevant app preferences on that device and signs out the local session.</p>
+    <p>Account deletion does not automatically remove manual backup/export files saved outside Tripzy, provider data independently retained under another lawful basis, or local data on another offline device.</p>
 
-    <h2>13. Children's privacy</h2>
-    <p>Tripzy is not designed or directed specifically to children under 13. If you believe that information relating to a child has been processed inappropriately through a third-party service used by the app, please contact us using the details below.</p>
+    <h2>13. Security</h2>
+    <p>Tripzy uses safeguards including private Android app storage, disabled Android automatic backup for internal data, HTTPS-only app networking, Supabase authentication, row-level security and per-user ownership policies, server-side privileged account deletion, restricted release logging, and protected Android content sharing.</p>
+    <p>No electronic system can be guaranteed to be completely secure. Report suspected security incidents promptly using the contact below.</p>
 
-    <h2>14. International processing</h2>
-    <p>Third-party providers such as Google may process advertising-related information on servers located in countries other than your own, subject to their legal and contractual safeguards.</p>
+    <h2>14. Children</h2>
+    <p>Tripzy is intended for adults managing vehicles and related expenses. Tripzy Cloud accounts are intended for users aged 18 or older. Users under 18 should not create a Tripzy Cloud account or submit personal data to Tripzy Cloud.</p>
 
-    <h2>15. Changes to this Privacy Policy</h2>
-    <p>We may update this Privacy Policy when Tripzy features, permissions, advertising practices, legal requirements or third-party services change. The latest version will be published at Tripzy's privacy-policy URL with an updated effective date.</p>
+    <h2>15. India privacy and grievance contact</h2>
+    <div class="notice">
+        <p><strong>Tripzy Privacy &amp; Grievance Contact</strong><br />Email: <strong>tripzysupport@gmail.com</strong></p>
+        <p>This contact may be used for privacy questions, access/correction/erasure requests, consent withdrawal, account-deletion help, grievances and suspected security incidents. Tripzy aims to respond promptly and within applicable legal time limits.</p>
+    </div>
 
-    <h2>16. Contact</h2>
-    <div class="notice"><p>For privacy questions about Tripzy, contact: <strong>tripzysupport@gmail.com</strong></p></div>
+    <h2>16. Personal data breaches and cyber incidents</h2>
+    <p>Tripzy maintains an incident-response process for investigating suspected unauthorized access, containing incidents, preserving relevant evidence and logs, remediating causes, and making legally required notifications to affected users or Indian authorities within applicable timelines.</p>
 
-    <footer><p>Tripzy Privacy Policy • Last updated 8 September 2026</p></footer>
+    <h2>17. International processing</h2>
+    <p>Some providers or subprocessors may process service or advertising information outside India. Where Indian law imposes conditions on such transfers, Tripzy will apply the legally required conditions.</p>
+
+    <h2>18. Changes and contact</h2>
+    <p>This policy may be updated as Tripzy features, cloud architecture, permissions, advertising practices, legal requirements or service providers change.</p>
+    <p>Privacy, grievance, account-deletion and security contact: <strong>tripzysupport@gmail.com</strong></p>
+
+    <footer><p>Tripzy Privacy Policy • Last updated 22 September 2026</p></footer>
 </main>
 </body>
 </html>
