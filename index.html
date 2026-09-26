@@ -30,15 +30,15 @@
     <div class="brand">tr<span>!</span>p<span>Z</span>y</div>
     <p class="tagline">We track. We know. We simplify.</p>
     <h1>Privacy Policy</h1>
-    <p class="muted">Effective date: 25 September 2026</p>
+    <p class="muted">Effective date: 26 September 2026</p>
 
-    <div class="card"><p>Tripzy is a local-first vehicle, fuel, expense, trip and reporting app. This policy explains the personal data Tripzy processes, why it is processed, where it is stored, when service providers may process it, and the choices and rights available to you.</p></div>
+    <div class="card"><p>Tripzy is a vehicle, fuel, expense, trip and reporting app that supports a device-local Guest workspace and an optional signed-in cloud account. This policy explains the personal data Tripzy processes, why it is processed, where it is stored, when service providers may process it, and the choices and rights available to you.</p></div>
 
     <h2>1. Local-first use and optional Tripzy Cloud</h2>
-    <p>You can use Tripzy's core local features without creating a Tripzy Cloud account. Vehicle, fuel, expense, trip and related records are stored in Tripzy's private app storage on your device.</p>
-    <p>If you choose to sign in to Tripzy Cloud, Tripzy uses Supabase for authentication, database and server-side account-deletion services. A cloud account may process your email address, authentication provider information, Supabase user identifier, and confirmed Tripzy records that are eligible for cloud sync.</p>
+    <p>You can use Tripzy's core features in Guest mode without creating a Tripzy Cloud account. Guest vehicle, fuel, expense, trip and related records are stored in Tripzy's private app storage on your device.</p>
+    <p>If you choose to sign in to Tripzy Cloud, Tripzy uses Supabase for authentication, database and server-side account-deletion services. For a signed-in workspace, Supabase is the durable account store for confirmed Tripzy records that are eligible for cloud sync, while Tripzy keeps a device-side working cache for app operation. A cloud account may process your email address, authentication provider information, Supabase user identifier and eligible Tripzy records.</p>
     <p>Cloud-synced core records currently include vehicle records, fuel entries, expenses, trips, trip stops and trip members, together with technical identifiers and timestamps needed to keep those records associated with your account and synchronized.</p>
-    <p>Existing guest/local data is not automatically attached to a cloud account merely because you sign in. Tripzy's ownership controls determine which records belong to the signed-in account.</p>
+    <p>Existing Guest data is not automatically attached to a cloud account merely because you sign in. When Tripzy finds Guest data, it asks whether you want to bring that data into the signed-in account and back it up, keep the Guest workspace separate and use only the account's cloud data, or cancel. Account switching never silently reassigns records between users.</p>
 
     <h2>2. Information you provide</h2>
     <ul>
@@ -62,7 +62,7 @@
 
     <h2>5. Automatic backup, manual backup and export</h2>
     <p>Tripzy disables Android automatic cloud backup and device-to-device transfer for its internal database, internal files and app preferences.</p>
-    <p>User-requested backup, restore and export files are created only when you request them and are saved through Android's file picker to a location you choose. You are responsible for copies stored outside Tripzy.</p>
+    <p>User-requested backup and export files are created only when you request them and are saved through Android's file picker to a location you choose. Local backup restore is available for the Guest workspace; while signed in, Tripzy disables local restore to avoid mixing or overwriting account workspaces. You are responsible for copies stored outside Tripzy.</p>
     <p>Smart Transaction pending candidates and temporary notification inbox/delivery bookkeeping are not included in the normal Tripzy backup/export dataset.</p>
 
     <h2>6. Purposes of processing</h2>
